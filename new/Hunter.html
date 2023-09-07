@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="Hunter.css">
+</head>
+  <body style="background-image: url(); background-repeat: no-repeat; background-size: cover;">
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/51ef45e87a.js" crossorigin="anonymous"></script>
+
+    <!-- code -->
+  <!-- nav -->
+  
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <!-- <i class="fas fa-bars"></i> --><i class="fa-solid fa-bars"></i>
+    </label>
+    <label class="logo">Rc</label>
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Feedback</a></li>
+    </ul>
+  </nav>
+  <!--  -->
+  <div class="container">
+    <div class="col">
+      <center><img src="images/blue.webp" alt="" srcset="" id="blue"></center>
+      <center> <img src="images/white.webp" alt="" srcset="" id="black"></center>
+       <center><img src="images/redbike.webp" alt="" srcset="" id="green"></center>
+      <br>
+      <button type="button" id="one" onclick="ok()" class="btn btn-primary"></button> <button type="button" id="two" onclick="okk()" class="btn btn-" style="background-color: grey;"></button> <button type="button" onclick="okkk()" id="three" class="btn btn-danger"></button>
+      <br><h5 style="color: red;">Click the colors to change Bike color</h5>
+
+    </div>
+    <div class="col">
+     <h1 style="font-weight: bold;">Royal Enfield Hunter 350</h1>
+     <h5>The Hunter 350 is one good looking motorcycle. It gets an engine that churns out good performance but its stiff ride quality makes it little bothersome.This is the new Royal Enfield Hunter 350. It is accessible, affordable, and also customisable.  </h5>
+      
+      <div class="buttons" style="margin-top: 3%;">
+  
+      </div>
+      
+      
+    </div>
+  </div>
+  <script>
+    var one=document.getElementById('one');
+var two=document.getElementById('two');
+var three= document.getElementById('three');
+var blue= document.getElementById('blue');
+var black=document.getElementById('black');
+var green=document.getElementById('green');
+// 
+function ok(){
+  blue.style.display='flex';
+  green.style.display='none'
+  black.style.display='none';
+}
+function okk(){
+  blue.style.display='none';
+  green.style.display='none'
+  black.style.display='flex';
+}
+function okkk(){
+ blue.style.display='none';
+ black.style.display='none';
+ green.style.display='flex'
+}
+   </script>
+</body>
+</html>
